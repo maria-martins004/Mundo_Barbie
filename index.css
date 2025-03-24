@@ -3,7 +3,7 @@ body, h1, h2, ul, li, dt, dl, dd, p {
   padding: 0px;
 }
 img {
-  width: 200px;
+  width: 220px;
   padding-bottom: 15px;
   display: block;
   /* max-width: 100%; */
@@ -17,7 +17,7 @@ body {
   color: #961e6d;
   -webkit-font-smoothing: antialiased;
   display: grid;
-  grid-template-columns: 1fr 125px minmax(300px, 900px) 1fr;
+  grid-template-columns: 1fr 125px minmax(100px, 900px) 1fr;
 }
 
 .menu {
@@ -52,7 +52,7 @@ body {
 }
 
 .section-1 {
-  grid-column: 2/5;
+  grid-column: 2/4;
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
@@ -83,7 +83,7 @@ body {
 .barbie h2::before {
   content: '';
   display: inline-block;
-  width: 15px;
+  width: 20px;
   height: 10px;
   margin-right: 10px;
   background: #c365a3;
@@ -96,6 +96,65 @@ body {
 }
 
 .barbie-list {
-  height: 400px;
+  height: 500px;
   overflow-y: scroll;
+  /* grid-column: 2; */
+}
+
+.barbie-list::-webkit-scrollbar {
+  width: 20px;
+}
+
+.barbie-list::-webkit-scrollbar-thumb {
+  background: #c365a3;
+  border-left: #ffdce7;
+  border-right: #ffdce7;
+}
+
+.filme-descricao {
+  grid-column: 2;
+}
+
+.filme-descricao section {
+  margin-bottom: 3rem;
+}
+
+.faq {
+  grid-column: 2/4;
+}
+
+.faq-list dt {
+  font-family: monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-bottom: .5rem;
+  color: #de0093;
+}
+
+.faq-list dt::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 10px;
+  margin-right: 10px;
+  background: #c365a3;
+}
+
+.faq-list dd {
+  font-family: Helvetica, arial, sans-serif;
+  margin-bottom: .5rem;
+  margin-left: 30px;
+}
+
+/* .mapa {
+
+} */
+
+.contato {
+  grid-column: 2/5;
+}
+
+.copy {
+  grid-column: 2/5;
 }
