@@ -90,6 +90,7 @@ body {
 }
 
 .barbie p {
+  word-break: break-word;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -147,14 +148,43 @@ body {
   margin-left: 30px;
 }
 
-/* .mapa {
+/* section-3 {
+  
+} */
 
+/* .mapa {
+  grid-column: 2;
 } */
 
 .contato {
   grid-column: 2/5;
 }
 
-.copy {
-  grid-column: 2/5;
+.dados {
+  grid-column: 2/3;
+  font-family: helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  margin-bottom: .5rem;
+  letter-spacing: 0.3rem;
+  color: #de0093;
+  font-size: 11px;
 }
+
+.dados:hover {
+  text-decoration: underline #961e6d;
+}
+
+.dados li {
+  padding-bottom: 5px;
+}
+
+ .copy {
+  grid-column: 2/5;
+  padding-bottom: 30px;
+  text-transform:uppercase;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 12px
+} 
