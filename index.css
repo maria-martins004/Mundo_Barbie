@@ -96,7 +96,13 @@ body {
   width: 20px;
   height: 10px;
   margin-right: 10px;
-  background: #c365a3;
+  background: #f285c5;
+}
+
+.ano {
+  font-weight: bold;
+  font-size: 15px;
+  color: #6b0d47;
 }
 
 .barbie p {
@@ -107,7 +113,7 @@ body {
 }
 
 .barbie-list {
-  height: 500px;
+  height: 350px;
   overflow-y: scroll;
   /* grid-column: 2; */
 }
@@ -117,7 +123,7 @@ body {
 }
 
 .barbie-list::-webkit-scrollbar-thumb {
-  background: #c365a3;
+  background: #f285c5;
   border-left: #ffdce7;
   border-right: #ffdce7;
 }
@@ -242,4 +248,12 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+}
+
+.js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
 }
