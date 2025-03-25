@@ -188,3 +188,34 @@ body {
   font-weight: bold;
   font-size: 12px
 } 
+
+@media (max-width: 1200px) {
+  body {
+    /* grid-template-columns: 1fr; */
+  grid-template-columns: 1fr 20px minmax(100px, 900px) 1fr;
+  }
+}
+
+@media (max-width: 1050px) {
+  body {
+    /* grid-template-columns: 1fr; */
+  grid-template-columns: 1fr 10px minmax(100px, 900px) 1fr;
+  }
+
+  p {
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 1000px) {
+  body {
+    /* grid-template-columns: 1fr; */
+  grid-template-columns: 1fr minmax(100px, 850px) 1fr;
+  }
+
+  .filme-descricao p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
