@@ -15,6 +15,7 @@ img {
   width: 220px;
   padding-bottom: 15px;
   display: block;
+  cursor: pointer;
   /* max-width: 100%; */
 }
 
@@ -134,6 +135,7 @@ body {
 
 .filme-descricao section {
   margin-bottom: 3rem;
+  /* width: 550px; */
 }
 
 .faq {
