@@ -260,7 +260,54 @@ footer {
   display: block !important;
 }
 
-/* 
+.audiozinho {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  width: 75%;
+  padding: 5px;
+  margin-top: 30px;
+  margin-right: 50px;
+  background: #fbd5e5;
+  color: #de0093;
+}
+
+.audiozinho:hover {
+  border: 1px solid white;
+}
+
 audio {
-  color: #ffdce7;
-} */
+  height: 35px;
+  width: 50%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #ffdce7
+}
+
+
+
+
+
+
+/*
+
+* Maneiras de estilizar audio.
+
+audio::-webkit-media-controls-panel
+audio::-webkit-media-controls-mute-button
+audio::-webkit-media-controls-play-button
+audio::-webkit-media-controls-timeline-container
+audio::-webkit-media-controls-current-time-display
+audio::-webkit-media-controls-time-remaining-display
+audio::-webkit-media-controls-timeline
+audio::-webkit-media-controls-volume-slider-container
+audio::-webkit-media-controls-volume-slider
+audio::-webkit-media-controls-seek-back-button
+audio::-webkit-media-controls-seek-forward-button
+audio::-webkit-media-controls-fullscreen-button
+audio::-webkit-media-controls-rewind-button
+audio::-webkit-media-controls-return-to-realtime-button
+audio::-webkit-media-controls-toggle-closed-captions-button 
+*/
