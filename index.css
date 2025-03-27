@@ -277,6 +277,40 @@ footer {
   border: 1px solid white;
 }
 
+.audiozinho2 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  width: 84%;
+  padding: 5px;
+  margin-top: 30px;
+  margin-right: 50px;
+  background: #fbd5e5;
+  color: #de0093;
+}
+
+.audiozinho2:hover {
+  border: 1px solid white;
+}
+
+.audiozinho3 {
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: .1rem;
+  width: 58%;
+  padding: 5px;
+  margin-top: 30px;
+  margin-right: 50px;
+  background: #fbd5e5;
+  color: #de0093;
+}
+
+.audiozinho3:hover {
+  border: 1px solid white;
+}
+
 audio {
   height: 35px;
   width: 50%;
