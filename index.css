@@ -222,6 +222,7 @@ footer {
   text-align: center;
 }
 
+/* Responsividade */
 @media (max-width: 1200px) {
   body {
     /* grid-template-columns: 1fr; */
@@ -250,7 +251,227 @@ footer {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .faq-list dd {
+    width: 750px;
+  }
+
+  .barbie p {
+    width: 550px;
+  }
 }
+
+  @media (max-width: 950px) {
+    body {
+      grid-template-columns: 1fr minmax(100px, 800px) 1fr;
+    }
+  
+    .filme-descricao p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .faq-list dd {
+      width: 650px;
+    }
+  
+    .barbie p {
+      width: 500px;
+    }
+
+    .menu {
+      grid-column: 1/5;
+      margin-left:  1.5rem; 
+      }
+
+      footer {
+        grid-column: 1/5;
+        margin-left:  1.5rem; 
+        }
+  
+  }
+
+  
+  @media (max-width: 920px) {
+    body {
+      /* grid-template-columns: 1fr; */
+      grid-template-columns: 1fr minmax(100px, 800px) 1fr;
+    }
+  
+    .filme-descricao p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .faq-list dd {
+      width: 650px;
+    }
+  
+    .barbie p {
+      width: 500px;
+    }
+
+    .menu {
+      grid-column: 1/5;
+      margin-left:  2.5rem; 
+      }
+
+      footer {
+        grid-column: 1/5;
+        margin-left:  2.5rem; 
+        }
+  
+      .titulo {
+        font-size: 5rem;
+      }
+  }
+
+  @media (max-width: 900px) {
+    body {
+      /* grid-template-columns: 1fr; */
+      grid-template-columns: 1fr minmax(100px, 810px) 1fr;
+    }
+  
+    .filme-descricao p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .faq-list dd {
+      width: 650px;
+      margin-left: 25px;
+    }
+
+    .faq-list dt {
+      margin-left: 25px;
+    }
+  
+    .barbie p {
+      width: 500px;
+    }
+
+    .menu {
+      grid-column: 1/5;
+      margin-left: 3rem; 
+      }
+
+      footer {
+        grid-column: 1/5;
+        margin-left:  3rem; 
+        }
+  
+      .titulo {
+        font-size: 5rem;
+        margin-left: 20px ;
+      }
+
+      img {
+        margin-left: 25px;
+      }
+
+      .dados {
+        margin-left: 25px;
+      }
+  }
+
+  @media (max-width: 870px) {
+    body {
+      /* grid-template-columns: 1fr; */
+      grid-template-columns: 1fr minmax(100px, 750px) 1fr;
+    }
+  
+    .filme-descricao p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .faq-list dd {
+      width: 650px;
+      margin-left: 70px;
+    }
+
+    .faq-list dt {
+      margin-left: 70px;
+    }
+  
+    .barbie p {
+      width: 450px;
+    }
+
+    .menu {
+      grid-column: 1/5;
+      margin-left: 5rem; 
+      }
+
+      footer {
+        grid-column: 1/5;
+        margin-left:  5rem; 
+        }
+  
+      .titulo {
+        font-size: 5rem;
+        margin-left: 55px ;
+      }
+
+      img {
+        margin-left:65px;
+        width: 150px;
+      }
+
+      .dados li {
+        margin-left: 45px;
+      }
+  }
+
+  @media (max-width: 870px) {
+    body {
+      /* grid-template-columns: 1fr; */
+      grid-template-columns: 1fr minmax(100px, 700px) 1fr;
+    }
+  
+    .filme-descricao p {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .faq-list dd {
+      width: 550px;
+      margin-left: 95px;
+    }
+
+    .faq-list dt {
+      margin-left: 90px;
+    }
+  
+    .barbie p {
+      width: 400px;
+    }
+
+    .menu {
+      grid-column: 1/5;
+      margin-left: 7rem; 
+      }
+
+      footer {
+        grid-column: 1/5;
+        margin-left:  7rem; 
+        }
+  
+      .titulo {
+        font-size: 4rem;
+        margin-left: 95px ;
+      }
+
+      img {
+        margin-left:95px;
+        width: 120px;
+      }
+
+      .dados li {
+        margin-left: 70px;
+      }
+  }
+
 
 .js-tabcontent section {
   display: none;
@@ -280,50 +501,7 @@ footer {
   font-weight: bold;
   font-size: 1rem;
   letter-spacing: .1rem;
-  width: 75%;
-  padding: 5px;
-  margin-top: 30px;
-  margin-right: 50px;
-  background: #fbd5e5;
-  color: #de0093;
-}
-
-.audiozinho:hover {
-  border: 1px solid white;
-}
-
-.audiozinho2 {
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: .1rem;
-  width: 84%;
-  padding: 5px;
-  margin-top: 30px;
-  margin-right: 50px;
-  background: #fbd5e5;
-  color: #de0093;
-}
-
-.audiozinho2:hover {
-  border: 1px solid white;
-}
-
-.audiozinho3 {
-  font-family: monospace;
-  font-weight: bold;
-  font-size: 1rem;
-  letter-spacing: .1rem;
-  width: 58%;
-  padding: 5px;
-  margin-top: 30px;
-  margin-right: 50px;
-  background: #fbd5e5;
-  color: #de0093;
-}
-
-.audiozinho3:hover {
-  border: 1px solid white;
+  color: #de0093; 
 }
 
 audio {
@@ -338,10 +516,7 @@ audio::-webkit-media-controls-panel {
 
 
 
-
-
 /*
-
 * Maneiras de estilizar audio.
 
 audio::-webkit-media-controls-panel
