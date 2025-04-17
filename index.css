@@ -529,7 +529,7 @@ footer {
   }
 
   .filme-descricao section {
-    width: 100px;
+    width: 300px;
   }
 
   .barbie-list {
@@ -546,9 +546,7 @@ footer {
   }
 
   .start {
-    margin-left: 30px;
-    margin-bottom: 10px;
-    align-self: flex-start;
+    margin-bottom: -70px;
   }
 
   .faq-list dt {
@@ -688,3 +686,4 @@ audio {
 audio::-webkit-media-controls-panel {
   background-color: #ffdce7
 }
+
