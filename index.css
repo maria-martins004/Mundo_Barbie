@@ -136,6 +136,7 @@ img {
   justify-content: center;
 }
 
+/* Adicionando scroll */
 .barbie-list {
   height: 350px;
   width: 300px;
@@ -155,12 +156,13 @@ img {
   border-right: #ffdce7;
 }
 
-
+/* paragrafos */
 .filme-descricao section {
   width: 950px;
   margin-left: 15px;
 }
 
+/* titulo */
 .barbie h2 {
   font-family: monospace;
   font-size: 1.5rem;
@@ -179,13 +181,14 @@ img {
   background: #f285c5;
 }
 
-
+/* ano de lançamento */
 .ano {
   font-weight: bold;
   font-size: 1.1rem;
   color: #6b0d47;
 }
 
+/* paragrafo - font */
 .barbie p {
   word-break: break-word;
   font-family: Arial, Helvetica, sans-serif;
@@ -305,7 +308,7 @@ span::before {
 
 /* Ajuste no rodapé */
 .fundo-3 {
-  height: 150px; 
+  height: 150px;
   width: 100%;
   background-image: url('./img/fundo4.png');
   background-size: cover;
@@ -317,11 +320,11 @@ span::before {
 footer {
   height: 0px;
   margin-top: 0rem;
-  margin-bottom: 0rem;  
+  margin-bottom: 0rem;
 }
 
 .copy {
-  width: 207vh;
+  /* width: 200vh; */
   padding: 15px;
   background-color: #f173a1;
   color: #fff;
@@ -335,6 +338,314 @@ footer {
 
 .copy p {
   text-align: center;
+}
+
+/* Responsivo abaixo de 1600px */
+@media(max-width: 1600px) {
+
+  .titulo {
+    font-family: 'Inspiration';
+    font-size: 9rem;
+  }
+
+  .start {
+    margin-bottom: -50px;
+    margin-top: -20px;
+  }
+}
+
+/* Responsivo abaixo de 1530px */
+@media(max-width: 1530px) {
+  .subtitulo {
+    background: none;
+  }
+
+  .subtitulo:hover {
+    text-decoration: 2px underline #f173a1;
+  }
+
+  .filme-descricao section {
+    width: 700px;
+  }
+
+  .start {
+    margin-left: 30px;
+    margin-bottom: 50px;
+    align-self: flex-start;
+  }
+
+  .end {
+    margin-right: 30px;
+    margin-top: 250px;
+    align-self: flex-end;
+  }
+}
+
+/* Responsivo abaixo de 1130px */
+@media(max-width: 1130px) {
+
+  .filme-descricao section {
+    width: 450px;
+  }
+
+  .barbie h2 {
+    margin-top: 1.8rem;
+    font-family: monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    color: #de0093;
+  }
+
+  .barbie h2::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    margin-right: 10px;
+    background: #f285c5;
+  }
+
+  .barbie-list {
+    height: 480px;
+    width: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .faq-list dt {
+    font-size: 1.1rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
+    color: #de0093;
+  }
+
+  .faq-list dt::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 12px;
+    margin-right: 10px;
+    background: #c365a3;
+    grid-column: 2;
+  }
+
+  .faq-list dd {
+    font-size: 1rem;
+    font-family: Helvetica, arial, sans-serif;
+    margin-bottom: .5rem;
+    margin-left: 30px;
+    width: 500px;
+  }
+}
+
+/* Responsivo abaixo de 845px */
+@media(max-width: 845px) {
+  .filme-descricao section {
+    width: 300px;
+  }
+
+  .barbie h2 {
+    margin-top: 2rem;
+    font-family: monospace;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+    color: #de0093;
+  }
+
+  .barbie h2::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 10px;
+    margin-right: 10px;
+    background: #f285c5;
+  }
+
+  .barbie-list {
+    height: 680px;
+    width: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo {
+    font-family: 'Inspiration';
+    font-size: 9rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .end {
+    margin-bottom: 130px;
+  }
+}
+
+@media (max-width: 710px) {
+  .filme-descricao section {
+    width: 200px;
+  }
+
+  .barbie-list {
+    height: 1050px;
+    width: 300px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsivo abaixo de 615px */
+@media(max-width: 615px) {
+  .titulo {
+    font-family: 'Inspiration';
+    font-size: 7rem;
+    line-height: 1;
+    font-weight: 400;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 150px;
+    padding-bottom: 15px;
+    display: block;
+    cursor: pointer;
+  }
+
+  .filme-descricao section {
+    width: 100px;
+  }
+
+  .barbie-list {
+    height: 2100px;
+    width: 200px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .barbie-list li {
+    list-style: none;
+  }
+
+  .start {
+    margin-left: 30px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+  }
+
+  .faq-list dt {
+    font-size: 0.9rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    margin-left: 20px;
+    color: #de0093;
+  }
+
+  .faq-list dt::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    margin-right: 10px;
+    background: #c365a3;
+    grid-column: 2;
+  }
+
+  .faq-list dd {
+    font-size: 1rem;
+    font-family: Helvetica, arial, sans-serif;
+    margin-bottom: .5rem;
+    margin-left: 50px;
+    width: 300px;
+  }
+
+  .dados {
+    display: grid;
+    justify-content: center;
+    font-family: 'georgia';
+    font-weight: bold;
+    margin-top: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #6B0D47;
+    font-size: 0.9rem;
+    margin-left: 25px;
+  }
+
+  .dados li {
+    padding-bottom: 5px;
+    list-style: none;
+  }
+
+  span {
+    font-size: 0.9rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    color: #de0093;
+  }
+
+  span::before {
+    content: '';
+    display: inline-block;
+    width: 12px;
+    height: 10px;
+    margin-right: 10px;
+    background: #c365a3;
+    grid-column: 2;
+  }
+}
+
+/* Responsivo abaixo de 360px */
+@media(max-width: 360px) {
+  .titulo {
+    font-size: 5rem;
+    margin-right: 15px;
+  }
+
+  .faq-list dt {
+    font-size: 0.9rem;
+    width: 90px;
+  }
+
+  .faq-list dt::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 12px;
+    margin-right: 10px;
+    background: #c365a3;
+    grid-column: 2;
+  }
+
+  .faq-list dd {
+    font-size: 1rem;
+    font-family: Helvetica, arial, sans-serif;
+    margin-bottom: .5rem;
+    margin-left: 20px;
+    width: 120px;
+  }
 }
 
 /* JavaScript */
