@@ -1,3 +1,4 @@
+//Animaçãozinha
 const tabMenu = document.querySelectorAll('.js-tabmenu li');
 const tabContent = document.querySelectorAll('.js-tabcontent section');
 tabContent[0].classList.add('ativo');
@@ -15,6 +16,7 @@ tabMenu.forEach((itemMenu, index) => {
   })
 });
 
+//Responsividade
 const container = document.querySelector('.barbie');
 const mediaQuery = window.matchMedia('(max-width: 615px)');
 
